@@ -1,0 +1,48 @@
+{
+  "atomCode" : "WhosbugAssign",
+  "execution" : {
+    "language" : "python",
+    "demands" : [],
+    "target" : "WhosbugAssign"
+  },
+  "input" : {
+    "__PROJECT_URL" : {
+      "label" : "项目路径",
+      "type" : "vuex-input",
+      "default": "",
+      "groupName" : "",
+      "placeholder" : "请填入项目的相对路径/绝对路径, 不填则默认为工作空间路径或git拉取插件设置的代码保存路径",
+      "desc" : "项目的保存路径"
+    },
+    "__PROJRCT_ID" : {
+      "label" : "项目ID",
+      "type" : "vuex-input",
+      "default": "${BK_CI_GIT_REPO_NAME}",
+      "groupName" : "",
+      "placeholder" : "请填入项目的唯一标识（如：QQ-a0001）",
+      "desc" : "项目的唯一标识"
+    },
+    "__RELEASE_VERSION" : {
+      "label" : "项目发布版本",
+      "type" : "vuex-input",
+      "default": "${BK_CI_GIT_REPO_TAG}",
+      "groupName" : "",
+      "placeholder" : "请填入产品的发布版本（如：1.0.0）",
+      "desc" : "项目产品发布的版本"
+    },
+    "__MONKEY_TASK_NAME" : {
+      "label" : "NewMonkey任务名",
+      "type" : "vuex-input",
+      "groupName" : "",
+      "placeholder" : "如须配合NewMonkey服务使用，请填入对应的任务名",
+      "desc" : "NewMonkey任务名"
+    }
+  },
+  "output" : {
+    "analyze_result" : {
+      "description" : "whosbug分析结果",
+      "type" : "string",
+      "isSensitive" : false
+    }
+  }
+}

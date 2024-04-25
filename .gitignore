@@ -1,0 +1,5 @@
+WhosbugAssign.egg-info/*
+dist/*
+.idea
+WhosbugAssign/SourceCode
+WhosbugAssign/res.json
